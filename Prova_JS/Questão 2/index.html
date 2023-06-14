@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Verificar Senha</title>
+  <link rel="stylesheet" href="index.css">
+
+  <script>
+    function validarSenha() {
+      let senha = document.getElementById("inputSenha").value;
+      let senhaValida = verificarSenha(senha);
+
+      if (senhaValida) {
+        alert("A senha é válida!");
+      } else {
+        alert("A senha não atende aos critérios!");
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  
+  <h1>Verificar Senha</h1>
+
+  <label for="inputSenha">Digite a senha:</label>
+  <input type="password" id="inputSenha">
+  <button onclick="validarSenha()">Verificar</button>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
